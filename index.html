@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neeraj's Portfolio</title>
+    <link rel="shortcut icon" href="mypic.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="closeNav()" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="closeNav()" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="closeNav()" href="#service">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="closeNav()" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="closeNav()" href="#hire-me">Hire Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" onclick="darkMode(),closeNav()" class="darkmode">
+                                <p id="light-mode">*DARK MODE*</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="background">
+            <img src="background.jpg" class="img-fluid" alt="bg-img">
+        </div>
+
+        <div class="heading-content text-center">
+            <h5>Hello, I'm </h5>
+            <h1>Neeraj Kumar</h1>
+            <p>AND THIS IS MY WORLD</p>
+        </div>
+    </div>
+
+
+
+    <div id="about" class="offset container mt-3 pb-5">
+        <div class="post-headeing text-center">
+            <h3 class="display-4 font-weight-bold">About Me</h3>
+            <hr class="w-50 mx-auto pb-5">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="Neeraj.png" class="img-fluid" alt="img" style="width: 400px; border-radius: 50%;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <h2>Wanna Know Me?</h2>
+                <hr>
+                <p id="more-text">I am full stack Web Developer. Basically I use NoSql Database as Mongodb which is very
+                    famous and easy to keep data secure,Nodejs which is javacript runtime, Ejs as a template to make web
+                    pages to build web apps. </p>
+                <button type="button" class="btn w-50 know-me" onclick="hideButton()">
+                    Know More
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="service" class="offset container mt-3 pb-5">
+        <div class="post-headeing text-center">
+            <h3 class="display-4 font-weight-bold">Projects</h3>
+            <hr class="w-50 mx-auto pb-5">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 pd-5 mb-4">
+                <div class="card">
+                    <img src="role.jpg" class="card-img-top" alt="role-base-access-control">
+                    <div class="card-body">
+                        <h5 class="card-title">Role Based Access Control</h5>
+                        <p class="card-text">A Web App using NodeJS in the backend, showcasing the Data Association in
+                            MongoDB and applying a Login/Signup facility using passport authentication.</p>
+                        <a href="https://rbacbynk.herokuapp.com/" target="_blank" class="btn btn-danger">Live
+                            Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pd-5 mb-4">
+                <div class="card">
+                    <img src="group.png" class="card-img-top group" alt="group-chat">
+                    <div class="card-body">
+                        <h5 class="card-title">Group Chat</h5>
+                        <p class="card-text">A group chat Web App using NodeJS and socket.io.</p>
+                        <a href="https://guroopchat.herokuapp.com/" target="_blank" class="btn btn-dark">Live
+                            Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pd-5  mb-4">
+                <div class="card">
+                    <img src="dogplanner.png" class="card-img-top" alt="dogplanner">
+                    <div class="card-body">
+                        <h5 class="card-title">Template Website</h5>
+                        <p class="card-text">
+                            Made A design using only BOOTSTRAP and with little CSS for adjustment. It is just to show
+                            the design made using bootstrap . I hope its beautiful .</p>
+                        <a href="https://neerajregaltos.github.io/dogPlanner/" target="_blank" class="btn btn-info">Live
+                            Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pd-5 mb-4">
+                <div class="card">
+                    <img src="todolist.png" class="card-img-top group" alt="todolist">
+                    <div class="card-body">
+                        <h5 class="card-title">Todo List Web App</h5>
+                        <p class="card-text">This app made with Express, Mongodb Database to keep some tasks in it. Very
+                            easy to use</p>
+                        <a href="https://itsmytodo.herokuapp.com/" target="_blank" class="btn btn-warning">Live
+                            Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pd-5 mb-4">
+                <div class="card">
+                    <img src="drumkit.png" class="card-img-top" alt="drum-kit-pic">
+                    <div class="card-body">
+                        <h5 class="card-title">Drum Kit: Javascript </h5>
+                        <p class="card-text">This website conclude the best practise of Javascipt and some DOM elements
+                            like document.querySelector, addEventListner and many more things.</p>
+                        <a href="https://neerajregaltos.github.io/drum-kit/" target="_blank" class="btn btn-success">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pd-5 mb-4">
+                <div class="card">
+                    <img src="socialmedia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Social Media(NOT READY)</h5>
+                        <p class="card-text">I am using MongoDB database to store the data,with login and signup by the
+                            use of passport authentication.</p>
+                        <a href="#" class="btn btn-dark">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="resume" class="offset container mt-3 pb-5">
+        <div class="post-heading text-center">
+            <h3 class="display-4 font-weight-bold">Resume</h3>
+            <hr class="w-50 mx-auto pb-5">
+        </div>
+        <div class="text-center">
+            <h3 class="resume-button">Download My Resume Here</h3>
+            <p class="resume-text"></p>
+            <button onclick="resume()" type="button" class="resume-button btn btn-info">
+                <a href="resume.pdf" download>Resume</a>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="hire-me" class="offset container mt-3 pb-5">
+        <div class="post-heading text-center">
+            <h3 class="display-4 font-weight-bold">Hire Me</h3>
+            <hr class="w-50 mx-auto pb-3">
+        </div>
+        <div class="text-center">
+            <button type="button" class="resume-button btn btn-success"><a
+                    href="mailto:neeraj.kumar100127@gmail.com">Email Me</a></button>
+        </div>
+
+
+
+    </div>
+
+
+
+    <footer id="footer" class="text-center">
+    </footer>
+
+
+
+    <script src="/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
